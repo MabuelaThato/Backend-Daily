@@ -26,7 +26,7 @@ def main():
     for name in names:
         name = name.replace("\n","")
         try:
-            with open(f"mail merge/Input/letters/ReadyToSend/{name}.txt","w") as letter:
+            with open(f"mail merge/Input/letters/ReadyToSend/{name}.docx","w") as letter:
                 for line in text:
                     line = line.replace("[name]", name)
                     if len(line) > 2:
